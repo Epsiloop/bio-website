@@ -88,3 +88,17 @@ footer .links a:hover{color:var(--pink)}
 /* --- BioVault app icon --- */
 .brand-ico{border-radius:50%}
 .hero-ico{width:88px;height:88px;border-radius:50%;margin-bottom:22px;box-shadow:0 10px 40px rgba(124,58,237,.45)}
+
+/* --- apps menu + product icons --- */
+.apps{position:relative}
+.apps-btn{display:grid;grid-template-columns:repeat(3,5px);gap:4px;padding:10px;border-radius:50%;border:0;background:transparent;cursor:pointer;transition:background .2s}
+.apps-btn:hover,.apps-btn[aria-expanded=true]{background:rgba(255,255,255,.08)}
+.apps-btn i{width:5px;height:5px;border-radius:50%;background:var(--mute)}
+.apps-menu{position:absolute;right:0;top:calc(100% + 14px);width:280px;padding:16px;border-radius:20px;border:1px solid var(--line);
+  background:rgba(20,8,12,.96);backdrop-filter:blur(14px);box-shadow:0 20px 60px rgba(0,0,0,.6);
+  display:none;grid-template-columns:repeat(2,1fr);gap:6px}
+.apps-menu.open{display:grid}
+.apps-menu a{display:flex;flex-direction:column;align-items:center;gap:8px;padding:14px 8px;border-radius:14px;color:var(--text)!important;text-decoration:none;font-size:.9rem;transition:background .2s}
+.apps-menu a:hover{background:rgba(255,255,255,.07)}
+.apps-menu img,.card .app-ico{width:56px;height:56px;border-radius:50%;display:block}
+.nav-logo{display:flex;align-items:center}.nav-logo img{display:block}
