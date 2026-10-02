@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — BioVault</title>
+<meta name="description" content="BioVault collects no data whatsoever.">
+<meta name="theme-color" content="#800020">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="png/epsiloop-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="glow" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="brand" href="/"><img src="logo.svg" alt="" width="34" height="34"><span>biovault</span></a>
+  <nav>
+    <a href="/#features">Features</a><a href="support.html">Support</a>
+    <a href="https://epsiloop.io" class="btn small">epsiloop.io</a>
+  </nav>
+</header>
+
+<main class="legal">
+  <h1 class="reveal">BioVault Privacy Policy</h1>
+  <p class="meta reveal">Last updated: 2026-08-10</p>
+  <div class="body">
+<p>BioVault is built around a simple rule: <strong>your files never leave your device, and neither does anything about you.</strong></p>
+<h2>What BioVault does</h2>
+<p>BioVault encrypts photos, videos, and documents you choose to import, using advanced encryption, and stores them only in this app's private storage on your device. Access is gated by your device's biometric authentication (fingerprint / face unlock) or, on a device with no biometric hardware enrolled, a PIN you set yourself.</p>
+<h2>Data collection</h2>
+<p><strong>BioVault collects no data whatsoever.</strong> Specifically:</p>
+<ul><li>No account, sign-up, or sign-in of any kind.</li><li>No analytics, crash reporting, or advertising SDKs are included in the app.</li><li>No files, filenames, thumbnails, or metadata are ever uploaded anywhere.</li><li>Your biometric data (fingerprint/face) is never accessed, seen, or stored by BioVault — it is handled entirely by your device's operating system (Face ID / Touch ID / Android BiometricPrompt), which only tells the app "yes" or "no."</li><li>No cloud backup, cloud sync, or remote key escrow exists for this app. The encryption key that protects your files lives only in your device's secure hardware (Secure Enclave / Android Keystore / TPM), gated by your biometric or PIN.</li></ul>
+<h2>Network use</h2>
+<p>BioVault uses your local network <strong>only</strong> for an optional feature: sending a file directly from one of your own devices to another (e.g., phone to laptop) over your local Wi-Fi network, and for an optional phone-unlock pairing feature for a desktop with no fingerprint reader. Both of these:</p>
+<ul><li>Only operate on your local network (never the internet).</li><li>Only start when you explicitly initiate a transfer or pairing.</li><li>Require a human-verified confirmation code on both devices before any connection is trusted.</li><li>Never send data to BioVault's developer or to any third party — there is no server anywhere in this app's design.</li></ul>
+<h2>Permissions BioVault requests, and why</h2>
+<table><thead><tr><th>Permission</th><th>Why</th></tr></thead><tbody><tr><td>Camera / Microphone</td><td>Only used if you tap the in-app camera button to capture a new photo/video to import. Never accessed otherwise.</td></tr><tr><td>Nearby Wi-Fi Devices</td><td>Only used to discover your other devices on the same local network for the LAN transfer / phone-unlock features above. Not used for location and not linked to your identity.</td></tr></tbody></table>
+<h2>If your device is lost, reset, or the app is uninstalled</h2>
+<p>Because there is no cloud backup and no recovery mechanism (by design — see above), the encryption key protecting your files exists only on that one device. If it is lost, factory reset, or has BioVault uninstalled, files encrypted by BioVault become permanently unreadable. BioVault warns you about this the first time you use it.</p>
+<h2>Changes to this policy</h2>
+<p>If this policy ever changes, the updated version will be published at the same URL this document is hosted at, with a new "Last updated" date above.</p>
+<h2>Contact</h2>
+<p>Questions about this policy or the app can be sent to: <strong>info.softsav@gmail.com</strong></p>
+  </div>
+</main>
+
+<footer>
+  <div class="links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></div>
+  © <span id="y"></span> biovault by <a href="https://epsiloop.io" style="color:inherit">Epsiloop</a> · Small steps, endless progress.
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
