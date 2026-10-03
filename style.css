@@ -105,6 +105,7 @@ footer .links a:hover{color:var(--pink)}
 @media(max-width:600px){
   .nav{padding:10px 5vw}
   .nav nav{gap:10px}
+  .nav nav>a.nav-logo{display:flex}
   .apps{position:static}
   .apps-menu{position:absolute;left:5vw;right:5vw;width:auto;top:calc(100% + 8px)}
 }
