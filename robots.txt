@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://biovault.epsiloop.io/sitemap.xml
