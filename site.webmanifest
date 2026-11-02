@@ -1,6 +1,6 @@
 {
-  "name": "BioVault",
-  "short_name": "BioVault",
+  "name": "EpsiVault",
+  "short_name": "EpsiVault",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0d0508",
