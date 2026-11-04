@@ -7,7 +7,7 @@
   "theme_color": "#800020",
   "icons": [
     {
-      "src": "png/biovault-180.png",
+      "src": "png/epsivault-180.png",
       "sizes": "180x180",
       "type": "image/png"
     }
